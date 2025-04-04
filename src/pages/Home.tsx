@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import GraphPlotter from '../components/GraphPlotter'
+import GraphPlotter from '../components/GraphPlotter';
+
 
 const Home = () => {
   const [xData, setXData] = useState<string>('')
@@ -19,7 +20,6 @@ const Home = () => {
   return (
     <div>
       <h1 className="text-xl font-bold mb-4">React Graph Plotter</h1>
-
       <input
         type="text"
         placeholder="X-axis values (comma separated)"
@@ -40,7 +40,6 @@ const Home = () => {
       >
         Plot Graph
       </button>
-
       {data && <GraphPlotter x={data.x} y={data.y} />}
     </div>
   )
