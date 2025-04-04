@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import GraphPlotter from '../components/GraphPlotter';
 
-
 const Home = () => {
   const [xData, setXData] = useState<string>('')
   const [yData, setYData] = useState<string>('')
